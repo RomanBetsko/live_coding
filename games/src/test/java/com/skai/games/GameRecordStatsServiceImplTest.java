@@ -32,6 +32,7 @@ public class GameRecordStatsServiceImplTest {
 
     public void mvp() {
     }
+    
 }
 
 
