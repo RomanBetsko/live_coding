@@ -26,4 +26,7 @@
     <option name="customVMEnabled" value="true" />
     <option name="customVMPath" value="$JAVA_HOME$" />
   </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
 </project>
