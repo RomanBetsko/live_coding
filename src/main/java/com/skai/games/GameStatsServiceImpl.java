@@ -14,4 +14,5 @@ public class GameStatsServiceImpl implements GameStatsService {
     public String winner(Collection<GameRecord> gameRecords) {
         return null;
     }
+
 }
