@@ -5,6 +5,9 @@ import org.junit.Test;
 import java.util.Collection;
 import java.util.List;
 
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
+
 public class GameRecordStatsServiceImplTest {
 
     private final Collection<GameRecord> gameRecords = List.of(
@@ -28,11 +31,17 @@ public class GameRecordStatsServiceImplTest {
             new GameRecord("Boston Bruins", "Pastrniak", 5, 1)
     );
 
-    public void winner() {
 
+    private final GameStatsService gameStatsService = new GameStatsServiceImpl();
+
+    @Test
+    public void winner() {
+        assertThat(gameStatsService.winner(gameRecords), is("Boston Bruins"));
     }
 
+    @Test
     public void mvp() {
+        assertThat(gameStatsService.mvp(gameRecords), is("Panarin"));
     }
     
 }
