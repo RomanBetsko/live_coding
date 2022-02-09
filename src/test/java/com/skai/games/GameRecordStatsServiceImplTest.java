@@ -1,5 +1,7 @@
 package com.skai.games;
 
+import org.junit.Test;
+
 import java.util.Collection;
 import java.util.List;
 

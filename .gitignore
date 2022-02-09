@@ -3,7 +3,7 @@
 *.iws
 *.ipr
 /.idea
-
+/target
 
 # Project exclude paths
 /out/
